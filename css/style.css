@@ -1,0 +1,401 @@
+/* Header area */
+
+.content-2 {width: 391px;height: 46px;background-image: url(../images/nmgh-cover.png);background-position: -345px -503px;margin: auto;cursor: pointer;}
+
+.content-2:hover {
+    filter: brightness(120%);
+}
+
+.umbrella-spin {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 0px;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.umbrella-inner{
+    display: block;
+    font-size: 0px;
+    animation: umbrella-spin 8s infinite linear;
+}
+
+.umbrella-4 .umbrella-inner {
+    width: 784px;
+    height: 784px;
+    background-image: url(../images/umbrella-4.png);
+}
+
+.umbrella-3 .umbrella-inner {
+    width: 387px;
+    height: 387px;
+    background-image: url(../images/umbrella-3.png);
+}
+
+.umbrella-2 .umbrella-inner {
+    background-image: url(../images/umbrella-2.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 464px;
+    height: 464px;
+}
+.umbrella-1 .umbrella-inner {
+    background-image: url(../images/umbrella-1.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 648px;
+    height: 647px;
+}
+@keyframes umbrella-spin {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.umbrella {
+    position: absolute;
+    transform: scale(0.7);
+}
+
+.umbrella.umbrella-4 {
+    top: 48%;
+    right: -7%;
+}
+
+.umbrella.umbrella-3 {
+    top: 3%;
+    right: 12%;
+}
+
+.umbrella.umbrella-2 {
+    top: 53%;
+    left: 8%;
+}
+
+.umbrella-1 {
+    top: 0%;
+    left: -24%;
+}
+
+.content {
+    transform: scale(0.711458);
+    position: absolute;
+    top: -9%;
+    left: calc(50% - 557px / 2);
+    z-index: 10;
+}
+
+.content-1 {
+    width: 557px;
+    height: 555px;
+    background-image: url(../images/content-2-cover.png);
+    margin-bottom: 25px;
+}
+
+.area-background-desktop {
+    width: 100%;
+    height: 766px;
+    background-image: url(../images/bg-2.jpg);
+    background-size: cover;
+}
+
+.area-background-desktop {
+    width: 100%;
+    height: 100%;
+}
+
+section.header-area {
+    width: 100%;
+    height: 617px;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Header area */
+/* points Location */
+
+section.points-map{
+    width: 100%;
+    height: 617px;
+    position: relative;
+}
+
+.points-background{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background: url(../images/bg-3.jpg) no-repeat center/100%;
+}
+
+.points-location{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    overflow: hidden;
+}
+
+.location{
+    background-image: url(../images/nmgh-cover.png);
+    width: 63px;
+    height: 136px;
+    display: block;
+    position: absolute;
+    font-size: 0;
+    transition: .3s;
+    opacity: 0;
+}
+
+.location:hover {
+    transform: translateY(-10px);
+    filter: brightness(1.25);
+}
+.location-project{
+    background-position: -1172px -138px;
+    top: 18%;
+    left: 20%;
+}
+.location-taibac{
+    background-position: 0px -1002px;
+    top: 5%;
+    left: 30%;
+}
+.location-thatdaiphai{
+    background-position: -1172px -688px;
+    bottom: 10%;
+    left: 34%;
+}
+.location-trungnguyen{
+    background-position: -1172px -276px;
+    top: 55%;
+    left: 55%;
+}
+.location-info{
+    background-position: -1172px -414px;
+    top: 20%;
+    left: 52%;
+}
+.location-phongloidao{
+    background-position: -1172px 0px;
+    bottom: 15%;
+    right: 15%;
+}
+.location-tintuc{
+    background-position: -1172px -551px;
+    top: 28%;
+    right: 28%;
+}
+
+.activeAnimation{
+    animation: xuathien 1s;
+    opacity: 1;
+}
+.activeAnimation:first-child{
+    animation-duration: 1s;
+}
+.activeAnimation:nth-child(2){
+    animation-duration: 1.2s;
+}
+.activeAnimation:nth-child(3){
+    animation-duration: 1.4s;
+}
+.activeAnimation:nth-child(4){
+    animation-duration: 1.6s;
+}
+.activeAnimation:nth-child(5){
+    animation-duration: 1.8s;
+}
+.activeAnimation:nth-child(6){
+    animation-duration: 2s;
+}
+.activeAnimation:last-child{
+    animation-duration: 2.2s;
+}
+@keyframes xuathien{
+    0%{
+        transform: translateY(-900px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+.project-box,
+.info-box {
+    width: 100%;
+    height: 617px;
+    overflow: auto;
+    position: absolute;
+    z-index: 5;
+    background: #fff;
+    transform: scale(0.9) translateX(-2021px);
+    border: 1px solid #292c38;
+}
+
+.project-box.active,
+.info-box.active{
+    transform: scale(0.9) translateX(0px);
+    transition: .5s;
+}
+
+.closeBoxIF,
+.closeBoxPJ {
+    width: 61px;
+    height: 60px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1;
+    background: url(../images/nmgh-cover.png);
+    background-position: 62px 163px;
+    transform: scale(0.7);
+    cursor: pointer;
+}
+
+h5.box-title {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: var(--third-font);
+    font-size: 35px;
+    padding: 10px;
+    letter-spacing: 25px;
+}
+
+.box-content-project {
+    padding: 15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 15px;
+}
+.item-img {
+    overflow: hidden;
+}
+.box-item img:hover {
+    transform: scale(1.25);
+}
+.box-item img {
+    width: 100%;
+    height: 100%;
+    transition: .3s;
+}
+a.item-link {
+    display: block;
+    padding: 5px;
+    border-bottom: 1px solid #000;
+    font-family: var(--third-font);
+    text-align: center;
+    font-size: 14px;
+}
+.box-content-info {
+    padding: 15px;
+    font-family: var(--primary-font);
+    font-size: 14px;
+    display: grid;
+    grid-template-columns: 1.1fr 1fr 1fr 1fr;
+    height: calc(100% - 60.6px);
+}
+.box-inner .info-img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 0 auto;
+    background-image: url("../images/img-info.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0px -20px;
+    border: 1px solid #000;
+}
+h5.name {
+    text-align: center;
+    padding: 20px;
+    font-family: var(--third-font);
+    font-size: 25px;
+    letter-spacing: 2px;
+}
+
+span.name-chinese {
+    display: block;
+    font-size: 16px;
+}
+p.gender,
+p.born,
+.social-link {
+    padding: 10px;
+    font-size: 18px;
+}
+i.fa-venus-mars,
+i.fa-calendar,
+i.fa-facebook,
+i.fa-github,
+i.fa-envelope {
+    margin: 0;
+    color: #000;
+    width: 30px;
+}
+.social-link a{
+    color: blue;
+}
+a.social-fb,
+a.social-github,
+a.social-gmail {
+    margin-bottom: 10px;
+    display: block;
+}
+
+h6.tieude {
+    font-size: 16px;
+    padding: 5px;
+    grid-column: 1/5;
+
+}
+.tieusu p{
+    text-indent: 20px;
+}
+
+.favorite-item{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.favorite-item .fr{
+    width: 50px;
+    height: 50px;
+    margin: 0 auto;
+}
+.fr.playgame{
+    background: url("../images/playgame.png") no-repeat;
+    background-size: cover;
+}
+.fr.watchmovie{
+    background: url("../images/movie.png") no-repeat;
+    background-size: cover;
+}
+.fr.coder{
+    background: url("../images/coder.png") no-repeat;
+    background-size: cover;
+}
+.fr.listenmusic{
+    background: url("../images/listening.png") no-repeat;
+    background-size: cover;
+}
+/* points Location */
+
+/* scroll bar */
+body::-webkit-scrollbar {
+    width: 5px;
+    background: rgba(0,0,0,.1);
+    top: 1%;
+} 
+body::-webkit-scrollbar-thumb{
+    background: rgba(0,0,0,.5);
+    border-radius: 10px;
+}
+/* scroll bar */

@@ -1,0 +1,80 @@
+/* Information */
+
+span.liveTime {cursor: default;}
+
+.audio-background {
+    width: 34px;
+    height: 34px;
+    display: inline-block;
+    background-image: url(../images/nmgh.png);
+    transform: scale(0.8);
+    background-position: -960px -461px;
+    cursor: pointer;
+    margin-right: 50px;
+}
+
+.audio-background.audio-active {
+    background-position: -1108px -411px;
+}
+
+.liveClock {
+    margin-left: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+a.homePage{
+    
+margin-left: 50px;
+    
+text-transform: uppercase;
+    
+font-weight: 600;
+    
+color: #08112a;
+    
+transition: .2s;
+}
+
+a.homePage:hover {
+    color: #8B0AA3;
+    filter: brightness(1.25);
+}
+.q-info-link{
+
+color: #EC3F51;
+
+font-weight: 600;
+
+transition: .2s;
+}
+
+.q-info-link:hover {
+    filter: brightness(1.5);
+}
+.q-info {
+    width: 50%;
+    height: 100%;
+    line-height: 35px;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 10px;
+    border-right: 2px solid #262a36;
+}
+
+.liveInfo {
+    display: flex;
+    width: 100%;
+    height: 35px;
+    font-size: 14px;
+    font-family: var(--second-font);
+    background: linear-gradient(45deg, transparent , #31bf97 , transparent);
+    color: #000;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+}
+
+.liveInfo:after {content: "";width: 480px;height: 25px;background-image: url(../images/nmgh.png);background-position: 1000px -413px;position: absolute;bottom: -25px;left: calc(50% - 491px / 2);z-index: 1;}
+
+/* Information */

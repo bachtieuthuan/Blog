@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Music Player</title>
+        <link rel="shortcut icon" href="src/images/favicon.ico" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="src/style.css" />
+        <link rel="stylesheet" href="../../css/resetcss.css">
+        <link rel="stylesheet" href="../../css/menu.css">
+        <link rel="stylesheet" href="../../css/responsive.css">
+    </head>
+    <body>
+        <!-- Infomation -->
+        <div class="liveInfo">
+            <div class="q-info">
+                <div class="copyright">
+                    Copyright &copy; Code By
+                    <a class="q-info-link" href="https://www.facebook.com/quangnguyen.thiendao/" data-toggle="popover" title="Nhất Sinh Nhất Thế : Quang Nguyễn" data-content="Some content inside the popover">一生一世</a> 
+                </div>
+                <a href="../../index.html" class="homePage">Trang Chủ</a>
+            </div>
+            <div class="liveClock">
+                <div class="audio-background">
+                    <audio id="audio" src="../../music/nmgh1.m4a" loop></audio>
+                </div>
+                <span class="liveTime">00:00:00:00 AM Sunday 09/10/2021</span>
+            </div>
+        </div>
+        <!-- Infomation -->
+        <section class="musicPlayer">
+            <section class="music-content">
+				<div class="img-rotate">
+                <div class="thumbnail-song">
+                    <img
+                        src="https://i.pinimg.com/564x/7d/1f/49/7d1f498862b37e4672dd72d55ca6cd44.jpg"
+                        alt=""
+                    />
+                    </div>
+				</div>
+                    <div class="content-wrapper">
+                    <div class="info-song">
+                        <p class="song-name">INI - Eluveitie</p>
+                        <p class="author">Eluvi</p>
+                    </div>
+                </div>
+                <audio id="audio"></audio>
+                <div class="bar">
+                    <div class="bar-song">
+                        <span class="current-time">00:00</span>
+                        <div class="progress"><div class="progress-bar"></div></div>
+                        <span class="duration-time">03:22</span>
+                    </div>
+                    <div class="song-footer">
+                        <button class="back">
+                            <i class="fa fa-step-backward"></i>
+                        </button>
+                        <button class="play-song">
+                            <i class="fa fa-play"></i>
+                        </button>
+                        <button class="forward">
+                            <i class="fa fa-step-forward"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="song-volume"> 
+                    <i class="fa fa-volume-down"></i> 
+                    <input type="range" min="1" max="100"
+                    value="50" class="volume-slider"> 
+                    <i class="fa fa-volume-up"></i> 
+                </div>
+            </section>
+            <div class="playlist-box">
+                <div class="list-song"></div>
+            </div>
+        </section>
+    </body>
+    <script src="src/musicplayer.js"></script>
+    <script src="../../js/clock.js"></script>
+</html>

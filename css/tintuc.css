@@ -1,0 +1,28 @@
+.news{
+    margin-top: 35px
+}
+.link-path {
+    height: 35px;
+    width: 100%;
+    padding: 0 50px 0 200px;
+    display: grid;
+    grid-template-columns: 150px 150px;
+    align-items: center;
+    border-bottom: 1px solid #000;
+    font-family: var(--third-font);
+}
+.homepage {
+    padding: 6px 0px 6px 25px;
+    background: url(../images/ico_home.svg) center left/21px 15px no-repeat;
+    font-size: 14px;
+    letter-spacing: 1px;
+    position: relative;
+    color: #24b38b;
+}
+
+a.homepage:after {content: "";height: 80%;width: 3px;background: linear-gradient(45deg, black, transparent);position: absolute;top: 10%;right: 10%;transform: rotate(-30deg);}
+.tintuc{
+    padding: 6px 0px 6px 0px;
+    font-size: 14px;
+    letter-spacing: 1px;
+}

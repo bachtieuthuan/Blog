@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="snowflake.ico" type="image/x-icon">
+    <title>Countdown New Year</title>
+    <link rel="stylesheet" href="countdown.css">
+    <link rel="stylesheet" href="../../css/menu.css">
+    <link rel="stylesheet" href="../../css/resetcss.css">
+    <link rel="stylesheet" href="../../css/responsive.css">
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+</head>
+<body class="background">
+    <!-- Infomation -->
+    <div class="liveInfo">
+        <div class="q-info">
+            <div class="copyright">
+                Copyright &copy; Code By
+                <a class="q-info-link" href="https://www.facebook.com/quangnguyen.thiendao/" data-toggle="popover" title="Nhất Sinh Nhất Thế : Quang Nguyễn" data-content="Some content inside the popover">一生一世</a> 
+            </div>
+            <a href="../../index.html" class="homePage">Trang Chủ</a>
+        </div>
+        <div class="liveClock">
+            <div class="audio-background">
+                <audio id="audio" src="../../music/nmgh1.m4a" loop></audio>
+            </div>
+            <span class="liveTime">00:00:00:00 AM Sunday 09/10/2021</span>
+        </div>
+    </div>
+    <!-- Infomation -->
+    <div class="newYear">
+        <div class="ny-bg"></div>
+        <div class="countdownBx">
+            <h2 class="title">Countdown To New Year<br><span class="title-sp">2022</span></h2>
+            <div class="countdown">
+                <div class="day">NA</div>
+                <div class="hours">NA</div>
+                <div class="minutes">NA</div>
+                <div class="seconds">NA</div>
+            </div>
+        </div>
+    </div>
+    <span class="hidden" id="bongtuyet">❄</span>
+</body>
+    <script src="countdown.js"></script>
+    <script src="../../js/clock.js"></script>
+    <script src="../../js/audioBg.js"></script>
+</html>

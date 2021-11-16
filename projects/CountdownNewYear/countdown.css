@@ -1,0 +1,113 @@
+.newYear{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+.ny-bg{
+    width: 100%;
+    height: 100%;
+    background: url(winter.jpg) no-repeat;
+    background-size: cover;
+}
+.countdownBx{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: scale(0.8);
+    color: #fff;
+    font-family: var(--third-font);
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    background: linear-gradient(90deg, transparent, #ffffff6e, transparent);
+}
+.title{
+    text-align: center;
+    font-size: 45px;
+    letter-spacing: 1.5px;
+    line-height: 50px;
+    margin-top: 100px;
+}
+
+span.title-sp {
+    color: #ffff4f;
+}
+.countdown{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    font-size: 25px;
+    grid-gap: 35px;
+    margin: auto;
+}
+
+.day,
+.hours,
+.minutes,
+.seconds {
+    width: 100px;
+    height: 100px;
+    padding: 35px;
+    text-align: center;
+    background: #000;
+    position: relative;
+}
+.day::after,
+.hours::after,
+.minutes::after,
+.seconds::after{
+    content: "D";
+    position: absolute;
+    bottom: -15px;
+    right: -9px;
+    padding: 9px;
+    background: #fff;
+    color: #000;
+}
+.hours::after{
+    content: "H";
+}
+.minutes::after{
+    content: "M";
+}
+.seconds::after{
+    content: "S";
+}
+#bongtuyet{
+    color: #fff;
+    font-size: 25px;
+    cursor: default;
+    position: absolute;
+    top: 0;
+    opacity: 0;
+    z-index: 999;
+    animation: spin-clockwise 6s linear infinite;
+}
+@keyframes spin-clockwise { 
+    to {
+        transform: rotate(360deg);
+    }
+}
+ @keyframes spin-counterclockwise { 
+    to {
+       transform: rotate(-360deg);
+    }
+}
+
+/* responsive */
+
+@media (max-width: 991px) {
+    .title {
+        margin-top: 50px;
+    }
+    .countdownBx {
+        grid-template-rows: 0.5fr 1.5fr;
+    }
+    .countdown{
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-columns: none;
+        justify-content: center;
+    }
+}
+/* responsive */

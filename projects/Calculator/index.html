@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calculator.css">
+    <link rel="stylesheet" href="../../css/resetcss.css">
+    <link rel="stylesheet" href="../../css/menu.css">
+    <link rel="stylesheet" href="../../css/responsive.css">
+    <link rel="stylesheet" href="../../vendor/font-awesome-4.7.0/css/font-awesome.css">
+</head>
+<body>
+    <!-- Infomation -->
+    <div class="liveInfo">
+        <div class="q-info">
+            <div class="copyright">
+                Copyright &copy; Code By
+                <a class="q-info-link" href="https://www.facebook.com/quangnguyen.thiendao/" data-toggle="popover" title="Nhất Sinh Nhất Thế : Quang Nguyễn" data-content="Some content inside the popover">一生一世</a> 
+            </div>
+            <a href="../../index.html" class="homePage">Trang Chủ</a>
+        </div>
+        <div class="liveClock">
+            <div class="audio-background">
+                <audio src="../../music/nmgh1.m4a" loop></audio>
+            </div>
+            <span class="liveTime">00:00:00:00 AM Sunday 09/10/2021</span>
+        </div>
+    </div>
+    <!-- Infomation -->
+    <section class="calculator">
+        <div class="cal-box">
+            <div class="box-content">0</div>
+            <div class="box-controls">
+                <div class="box-item clear">C</div>
+                <div class="box-item delete">
+                    <i class="fa fa-times" aria-hidden="true"></i>
+                </div>
+                <div class="box-item add">+</div>
+                <div class="box-item minus">-</div>
+                <div class="box-item multiply">*</div>
+                <div class="box-item divide">/</div>
+                <div class="box-item so0">0</div>
+                <div class="box-item so1">1</div>
+                <div class="box-item so2">2</div>
+                <div class="box-item so3">3</div>
+                <div class="box-item so4">4</div>
+                <div class="box-item so5">5</div>
+                <div class="box-item so6">6</div>
+                <div class="box-item so7">7</div>
+                <div class="box-item so8">8</div>
+                <div class="box-item so9">9</div>
+                <div class="box-item dot">.</div>
+                <div class="box-item result">=</div>
+            </div>
+        </div>
+    </section>
+</body>
+    <script src="calculator.js"></script>
+    <script src="../../js/clock.js"></script>
+    <script src="../../js/audioBg.js"></script>
+</html>

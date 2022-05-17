@@ -1,6 +1,8 @@
 document.addEventListener("DOMContentLoaded", function(){
-    const countDate = new Date("jan 1, 2022 00:00:00").getTime();
-    function newYear(){
+    var newYear = new Date().getFullYear() + 1;
+    document.getElementById('newYear').innerHTML = newYear;
+    const countDate = new Date("jan 1, " + newYear + " 00:00:00").getTime();
+    function countDown(){
         const now = new Date().getTime();
         let gap = countDate - now;
         const second = 1000;
@@ -17,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function(){
         document.querySelector(".seconds").innerText = s;
     }
     setInterval(function(){
-        newYear();
+        countDown();
     })
 
     //bong tuyet roi
